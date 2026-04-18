@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feb-Cafe | Modern Taste</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=2078&auto=format&fit=crop');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #f39c12;
+        }
+
+        header p {
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        /* Grid Menu */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* Glassmorphism Card */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #f39c12;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .btn-order {
+            background: #f39c12;
+            color: #fff;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-order:hover {
+            background: #e67e22;
+            box-shadow: 0 0 15px rgba(243, 156, 18, 0.5);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Neo-Cafe</h1>
+            <p>Experience the art of brewing in every cup</p>
+        </header>
+
+        <div class="menu-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=500&auto=format&fit=crop" alt="Coffee">
+                <h3>Caramel Macchiato</h3>
+                <p>Paduan espresso premium dengan susu lembut dan saus karamel manis.</p>
+                <span class="price">Rp 35.000</span>
+                <button class="btn-order">Pesan Sekarang</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=500&auto=format&fit=crop" alt="Coffee">
+                <h3>V60 Manual Brew</h3>
+                <p>Biji kopi pilihan yang diseduh manual untuk rasa yang lebih clean dan aromatik.</p>
+                <span class="price">Rp 28.000</span>
+                <button class="btn-order">Pesan Sekarang</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=500&auto=format&fit=crop" alt="Coffee">
+                <h3>Hot Cappuccino</h3>
+                <p>Keseimbangan sempurna antara espresso, steamed milk, dan foam tebal.</p>
+                <span class="price">Rp 30.000</span>
+                <button class="btn-order">Pesan Sekarang</button>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2024 Neo-Cafe Digital Menu. All Rights Reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
